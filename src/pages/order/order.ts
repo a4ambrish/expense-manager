@@ -71,7 +71,10 @@ if (typeof this.allOrders != 'undefined' && this.allOrders ) {
     this.orderDB.setAll(this.allOrders);
     //this.orderDB.save();
   
-  
+    let currentIndex = this.navCtrl.getActive().index;
+    this.navCtrl.push("ContentPage").then(() => {
+        this.navCtrl.remove(currentIndex);
+    });
   }
 }
 
