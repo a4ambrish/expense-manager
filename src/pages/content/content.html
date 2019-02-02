@@ -28,27 +28,17 @@
 <ion-content padding>
 
         <ion-card color="light" *ngFor="let item of allOrders">
-
-                <ion-card-content left text-center>
+                <ion-card-header color="primary" >
                         
-                                {{item.orderDate | date:"dd-MMM-yyyy hh:mm"}}
-                            
-                </ion-card-content>
-            
-                <ion-row>
-                 
-                  
-                        <ion-col left text-center>
-                                Spent {{item.orderAmt | currency:"&#8377;"}}
-                              </ion-col>
-                        <ion-col center text-center>
-                                <button ion-button color="primary" clear small icon-start>
+                        <!-- <ion-card-title center center-text color="primary"> -->
+                                {{item.orderDate | date:"dd-MMM-yyyy hh:mm"}} [{{item.orderAmt | currency:"&#8377;"}}] 
+                                <button ion-button color="primary" clear small icon-start block>
                                         <ion-icon name='text'></ion-icon>
                                         View Details
                                       </button>
-                              </ion-col>
-                
-                </ion-row>
+                        <!-- </ion-card-title> -->
+                      </ion-card-header>
+              
               </ion-card>
 
 </ion-content>
