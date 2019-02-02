@@ -37,7 +37,7 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
+#3 node-waf configuration
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
@@ -71,3 +71,37 @@ plugins/
 
 # dotenv environment variables file
 .env
+www/build/
+www/build/3.js
+www/build/0.js
+www/build/0.js.map
+www/build/1.js
+www/build/10.js
+www/build/11.js
+www/build/11.js.map
+www/build/12.js
+www/build/2.js
+www/build/4.js
+www/build/5.js
+www/build/6.js
+www/build/7.js
+www/build/8.js
+www/build/9.js
+www/build/main.js
+www/build/main.js.map
+www/build/vendor.js
+www/build/vendor.js.map
+.sourcemaps/main.js.map
+.sourcemaps/0.js.map
+.sourcemaps/1.js.map
+.sourcemaps/10.js.map
+.sourcemaps/11.js.map
+.sourcemaps/12.js.map
+.sourcemaps/2.js.map
+.sourcemaps/3.js.map
+.sourcemaps/4.js.map
+.sourcemaps/5.js.map
+.sourcemaps/6.js.map
+.sourcemaps/7.js.map
+.sourcemaps/8.js.map
+.sourcemaps/9.js.map
