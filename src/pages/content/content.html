@@ -4,21 +4,25 @@
         <ion-card color="primary" >
 
                 <ion-card-content center text-center>
-                  <p>Budget Utilized : {{budgetConsumed}}</p>
+                  <p>Budget Utilized : {{budgetConsumed | currency:"&#8377;"}}</p>
                 </ion-card-content>
             
                 <ion-row>
                  
                   
                         <ion-col left text-center>
-                                ddd
+                                        <ion-chip color="secondary">
+                                                        <ion-label color="dark">Budget {{budgetAlloted | currency:'&#8377;'}}</ion-label>
+                                                      </ion-chip>
+                                
                               </ion-col>
-                        <ion-col center text-center>
-                                ddd
+                        <ion-col right text-center>
+                                        <ion-chip color="light">
+                                                        <ion-label color="dark">Used {{budgetPercentUsed | percent}}</ion-label>
+                                                      </ion-chip>
+                                 
                               </ion-col>
-                  <ion-col right text-center>
-                    ddd
-                  </ion-col>
+                 
                 </ion-row>
               </ion-card>
 
